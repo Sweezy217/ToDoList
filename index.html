@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="sidenav">
+      <!-- <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+        fill="black"
+        class="bi bi-x-circle-fill"
+        viewBox="0 0 16 16"
+        onclick="close()"
+      >
+        <path
+          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"
+        />
+      </svg> -->
+      <div class="toggle">
+        <p>Dark Mode</p>
+        <label for="toggle">
+          <input type="checkbox" name="toggle" id="toggle" />
+          <span class="slider" onclick="mode()"></span>
+        </label>
+      </div>
+    </div>
+
+    <div id="holder-to-do-list">
+      <div id="input-section" class="header">
+        <h2>My To Do List</h2>
+        <input type="text" id="myInput" placeholder="Enter Things to do..." />
+        <span onclick="button()" class="addBtn">Add</span>
+      </div>
+
+      <ul id="myUL">
+        <li class="checked">Play football On June 16</li>
+      </ul>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

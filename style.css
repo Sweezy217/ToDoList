@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    
+    position: relative;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.645);
+}
+
+.sidenav {
+    position: fixed;
+    overflow-x: hidden;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 150px;
+    transition: 1s;
+    /* border: 2px solid red; */
+}
+
+/* svg {
+    position: absolute;
+    top: 5px;
+    left: 1px;
+}
+
+svg:hover{
+    fill: red;
+    cursor: pointer;
+} */
+
+label {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+  }
+  
+  label input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 3px;
+    right: 0;
+    bottom: 0;
+    background-color: #d72020;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 70%;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  #toggle:checked + .slider {
+    background-color: #21f379;
+  }
+  
+  #toggle:checked + .slider:before {
+    transform: translateX(26px);
+  }
+
+  #holder-to-do-list {
+    /* border: 2px solid blue; */
+    width: 100%;
+  }
+
+#input-section {
+    text-align: center;
+    padding: 15px 100px;
+    justify-content: center;
+}
+
+#input-section h2 {
+    font-weight: 900;
+    margin: 5px;
+    color: #dedede;
+}
+p {
+    /* position: absolute; */
+    margin: 5px;
+    color: #000;
+}
+
+#input-section input {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    /* width: 300px; */
+}
+input[type=text] {
+    width: 400px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  /* When the input field gets focus, change its width to 100% */
+  input[type=text]:focus {
+    width: 60%;
+  }
+
+#input-section input::placeholder {
+    font-size: 15px;
+}
+
+#input-section span {
+    text-align: center;
+    border: none;
+    background-color: #eee;
+    color: #000;
+    width: 15%;
+    min-width: 50px;
+    font-size: 15px;
+    padding: 10px 15px;
+}
+
+#input-section span:hover {
+    cursor: pointer;
+    background-color: red;
+    color: #fff;
+}
+
+ul {
+    padding-top: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+ul li {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ccc;
+    margin: 0;
+    padding: 10px 15px;
+}
+
+ul li:hover {
+    background: #ddd;
+  }
+  
+  ul li.checked {
+    background: #888;
+    color: black;
+    text-decoration: line-through;
+  }
+
+ul li:nth-child(odd) {
+    background: #f9f9f9; 
+  }
+
+  .black {
+    background-color: black;
+    /* color: #fff; */
+  }
+
+  .white {
+    background-color: #fff;
+    color: #fff;
+  }
